@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="50dip"
+        android:text="@string/app_name"
+        android:textColor="#335085"
+        android:textStyle="bold"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btCadastrarPOI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dip"
+            android:background="@null"
+            android:onClick="onClickCadastrarPoi"
+            android:drawableTop="@drawable/bt_cadastrar_poi"
+            android:text="@string/cadastrarPOI"
+            android:textColor="#335085"
+            android:textSize="15sp" />
+        
+         <Button
+            android:id="@+id/btLogin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="onClickListarPoi"
+            android:drawableTop="@drawable/bt_listar_poi"
+            android:text="@string/listarPOI"
+            android:textColor="#335085"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dip"
+            android:background="@null"
+            android:onClick="onClickSobre"
+            android:drawableTop="@drawable/bt_sobre"
+            android:text="@string/sobre"
+            android:textColor="#335085"
+            android:textSize="15sp" />
+        
+         <Button
+            android:id="@+id/btSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="onClickSair"
+            android:drawableTop="@drawable/bt_sair"
+            android:text="@string/listarPOI"
+            android:textColor="#335085"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

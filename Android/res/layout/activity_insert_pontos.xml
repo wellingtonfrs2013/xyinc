@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="15dip" >
+    
+     <TextView
+        android:id="@+id/titulo_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dip"
+        android:text="@string/cadastrarPontos"
+        android:textColor="#335085"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/input"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+      <EditText
+            android:id="@+id/edtNomeReferencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="#00000000"
+            android:hint="@string/nomePoi"
+            android:inputType="textCapWords"
+            android:maxLength="50"
+            android:singleLine="true" />
+    </LinearLayout>
+       
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/input"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+      <EditText
+            android:id="@+id/edtCoordenadaX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="#00000000"
+            android:hint="@string/coordenadaX"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true" />
+    </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/input"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+      <EditText
+            android:id="@+id/edtCoordenadaY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="#00000000"
+            android:hint="@string/coordenadaY"
+            android:inputType="number"
+            android:maxLength="5"
+            android:singleLine="true" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+      
+        <Button
+            android:id="@+id/btCadastrarPontos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_full"
+            android:text="@string/salvar"
+            android:onClick="onClickCadastrarPoi"
+            android:textColor="#335085"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+      
+        <Button
+            android:id="@+id/btVoltarPontos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_full"
+            android:text="@string/cancelarVoltar"
+            android:onClick="onClickCancelarVoltar"
+            android:textColor="#335085"
+            android:textSize="20sp" />
+    </LinearLayout>
+   
+</LinearLayout>
